@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/modocache/MDCDamerauLevenshtein.svg?branch=master)](https://travis-ci.org/modocache/MDCDamerauLevenshtein)
 
-Categories to calculate the edit distance between NSString objects.
+Categories to calculate the edit distance between `NSString` objects.
 
 ```objc
 [@"Central Park" mdc_levenshteinDistanceTo:@"Centarl Prak"];         // => 4
