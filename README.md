@@ -4,6 +4,11 @@
 
 Categories to calculate the edit distance between NSString objects.
 
+```objc
+[@"Central Park" mdc_levenshteinDistanceTo:@"Centarl Prak"];         // => 4
+[@"Central Park" mdc_damerauLevenshteinDistanceTo:@"Centarl Prak"];  // => 2
+```
+
 MDCDamerauLevenshtein includes two algorithms for calculating
 the edit distance between NSString objects:
 
