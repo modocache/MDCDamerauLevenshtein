@@ -26,7 +26,7 @@ Potential applications for this library:
  display terms with small edit distances.
 - ...and many more!
 
-# Other Implementations
+## Other Implementations
 
 - [koyachi/NSString-LevenshteinDistance](https://github.com/koyachi/NSString-LevenshteinDistance)
   also provides categories on `NSString`, but only computes Levenshtein distance, not
