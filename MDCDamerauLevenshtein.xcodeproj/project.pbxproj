@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA4C02FA192A01EA00EDA983 /* NSString+MDCCompare.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3096D1929FCCA00EB38CD /* NSString+MDCCompare.m */; };
+		DA4C02FC192A026600EDA983 /* MDCLevenshteinDistance.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = DACB477219295403002FF5B2 /* MDCLevenshteinDistance.h */; };
+		DA4C0303192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4C0302192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m */; };
+		DACB474A1929538C002FF5B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB47491929538C002FF5B2 /* Foundation.framework */; };
+		DACB47581929538D002FF5B2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB47571929538D002FF5B2 /* XCTest.framework */; };
+		DACB47591929538D002FF5B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB47491929538C002FF5B2 /* Foundation.framework */; };
+		DACB475B1929538D002FF5B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB475A1929538D002FF5B2 /* UIKit.framework */; };
+		DACB475E1929538D002FF5B2 /* libMDCDamerauLevenshtein.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DACB47461929538C002FF5B2 /* libMDCDamerauLevenshtein.a */; };
+		DACB47641929538D002FF5B2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DACB47621929538D002FF5B2 /* InfoPlist.strings */; };
+		DACB477419295403002FF5B2 /* MDCLevenshteinDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = DACB477319295403002FF5B2 /* MDCLevenshteinDistance.m */; };
+		DACB47781929573C002FF5B2 /* MDCLevenshteinDistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DACB47771929573C002FF5B2 /* MDCLevenshteinDistanceTests.m */; };
+		DAD3095E1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3095D1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.m */; };
+		DAD309641929F95D00EB38CD /* MDCDamerauLevenshteinDistance.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD309631929F95D00EB38CD /* MDCDamerauLevenshteinDistance.m */; };
+		DAD309681929FC5800EB38CD /* MDCDistanceMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD309671929FC5800EB38CD /* MDCDistanceMatrix.m */; };
+		DAD309701929FFAC00EB38CD /* MDCDamerauLevenshteinDistanceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD3096F1929FFAC00EB38CD /* MDCDamerauLevenshteinDistanceTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DACB475C1929538D002FF5B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DACB473E1929538C002FF5B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DACB47451929538C002FF5B2;
+			remoteInfo = MDCDamerauLevenshtein;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DACB47441929538C002FF5B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				DA4C02FC192A026600EDA983 /* MDCLevenshteinDistance.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DA4C0301192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDCDamerauLevenshteinDistance.h"; sourceTree = "<group>"; };
+		DA4C0302192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDCDamerauLevenshteinDistance.m"; sourceTree = "<group>"; };
+		DACB47461929538C002FF5B2 /* libMDCDamerauLevenshtein.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMDCDamerauLevenshtein.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACB47491929538C002FF5B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DACB474D1929538C002FF5B2 /* MDCDamerauLevenshtein-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDCDamerauLevenshtein-Prefix.pch"; sourceTree = "<group>"; };
+		DACB474E1929538C002FF5B2 /* MDCDamerauLevenshtein.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDCDamerauLevenshtein.h; sourceTree = "<group>"; };
+		DACB47561929538D002FF5B2 /* MDCDamerauLevenshteinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDCDamerauLevenshteinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DACB47571929538D002FF5B2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DACB475A1929538D002FF5B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DACB47611929538D002FF5B2 /* MDCDamerauLevenshteinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDCDamerauLevenshteinTests-Info.plist"; sourceTree = "<group>"; };
+		DACB47631929538D002FF5B2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DACB477219295403002FF5B2 /* MDCLevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCLevenshteinDistance.h; sourceTree = "<group>"; };
+		DACB477319295403002FF5B2 /* MDCLevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCLevenshteinDistance.m; sourceTree = "<group>"; };
+		DACB47771929573C002FF5B2 /* MDCLevenshteinDistanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCLevenshteinDistanceTests.m; sourceTree = "<group>"; };
+		DAD3095C1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDCLevenshteinDistance.h"; sourceTree = "<group>"; };
+		DAD3095D1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDCLevenshteinDistance.m"; sourceTree = "<group>"; };
+		DAD309621929F95D00EB38CD /* MDCDamerauLevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCDamerauLevenshteinDistance.h; sourceTree = "<group>"; };
+		DAD309631929F95D00EB38CD /* MDCDamerauLevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCDamerauLevenshteinDistance.m; sourceTree = "<group>"; };
+		DAD309661929FC5800EB38CD /* MDCDistanceMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MDCDistanceMatrix.h; sourceTree = "<group>"; };
+		DAD309671929FC5800EB38CD /* MDCDistanceMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCDistanceMatrix.m; sourceTree = "<group>"; };
+		DAD3096C1929FCCA00EB38CD /* NSString+MDCCompare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDCCompare.h"; sourceTree = "<group>"; };
+		DAD3096D1929FCCA00EB38CD /* NSString+MDCCompare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDCCompare.m"; sourceTree = "<group>"; };
+		DAD3096F1929FFAC00EB38CD /* MDCDamerauLevenshteinDistanceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MDCDamerauLevenshteinDistanceTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DACB47431929538C002FF5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACB474A1929538C002FF5B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACB47531929538D002FF5B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACB475E1929538D002FF5B2 /* libMDCDamerauLevenshtein.a in Frameworks */,
+				DACB47581929538D002FF5B2 /* XCTest.framework in Frameworks */,
+				DACB475B1929538D002FF5B2 /* UIKit.framework in Frameworks */,
+				DACB47591929538D002FF5B2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DACB473D1929538C002FF5B2 = {
+			isa = PBXGroup;
+			children = (
+				DACB474B1929538C002FF5B2 /* MDCDamerauLevenshtein */,
+				DACB475F1929538D002FF5B2 /* MDCDamerauLevenshteinTests */,
+				DACB47481929538C002FF5B2 /* Frameworks */,
+				DACB47471929538C002FF5B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DACB47471929538C002FF5B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DACB47461929538C002FF5B2 /* libMDCDamerauLevenshtein.a */,
+				DACB47561929538D002FF5B2 /* MDCDamerauLevenshteinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DACB47481929538C002FF5B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DACB47491929538C002FF5B2 /* Foundation.framework */,
+				DACB47571929538D002FF5B2 /* XCTest.framework */,
+				DACB475A1929538D002FF5B2 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DACB474B1929538C002FF5B2 /* MDCDamerauLevenshtein */ = {
+			isa = PBXGroup;
+			children = (
+				DACB474E1929538C002FF5B2 /* MDCDamerauLevenshtein.h */,
+				DACB476F192953CD002FF5B2 /* Algorithms */,
+				DACB4770192953CD002FF5B2 /* Categories */,
+				DACB474C1929538C002FF5B2 /* Supporting Files */,
+			);
+			path = MDCDamerauLevenshtein;
+			sourceTree = "<group>";
+		};
+		DACB474C1929538C002FF5B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACB474D1929538C002FF5B2 /* MDCDamerauLevenshtein-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DACB475F1929538D002FF5B2 /* MDCDamerauLevenshteinTests */ = {
+			isa = PBXGroup;
+			children = (
+				DACB4771192953D7002FF5B2 /* Algorithms */,
+				DACB47601929538D002FF5B2 /* Supporting Files */,
+			);
+			path = MDCDamerauLevenshteinTests;
+			sourceTree = "<group>";
+		};
+		DACB47601929538D002FF5B2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACB47611929538D002FF5B2 /* MDCDamerauLevenshteinTests-Info.plist */,
+				DACB47621929538D002FF5B2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DACB476F192953CD002FF5B2 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				DACB477219295403002FF5B2 /* MDCLevenshteinDistance.h */,
+				DACB477319295403002FF5B2 /* MDCLevenshteinDistance.m */,
+				DAD309621929F95D00EB38CD /* MDCDamerauLevenshteinDistance.h */,
+				DAD309631929F95D00EB38CD /* MDCDamerauLevenshteinDistance.m */,
+				DAD309651929FC5800EB38CD /* Data Structures */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		DACB4770192953CD002FF5B2 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DAD3095C1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.h */,
+				DAD3095D1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.m */,
+				DA4C0301192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.h */,
+				DA4C0302192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		DACB4771192953D7002FF5B2 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				DACB47771929573C002FF5B2 /* MDCLevenshteinDistanceTests.m */,
+				DAD3096F1929FFAC00EB38CD /* MDCDamerauLevenshteinDistanceTests.m */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		DAD309651929FC5800EB38CD /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				DAD309661929FC5800EB38CD /* MDCDistanceMatrix.h */,
+				DAD309671929FC5800EB38CD /* MDCDistanceMatrix.m */,
+				DAD3096C1929FCCA00EB38CD /* NSString+MDCCompare.h */,
+				DAD3096D1929FCCA00EB38CD /* NSString+MDCCompare.m */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DACB47451929538C002FF5B2 /* MDCDamerauLevenshtein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACB47691929538D002FF5B2 /* Build configuration list for PBXNativeTarget "MDCDamerauLevenshtein" */;
+			buildPhases = (
+				DACB47421929538C002FF5B2 /* Sources */,
+				DACB47431929538C002FF5B2 /* Frameworks */,
+				DACB47441929538C002FF5B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MDCDamerauLevenshtein;
+			productName = MDCDamerauLevenshtein;
+			productReference = DACB47461929538C002FF5B2 /* libMDCDamerauLevenshtein.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DACB47551929538D002FF5B2 /* MDCDamerauLevenshteinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DACB476C1929538D002FF5B2 /* Build configuration list for PBXNativeTarget "MDCDamerauLevenshteinTests" */;
+			buildPhases = (
+				DACB47521929538D002FF5B2 /* Sources */,
+				DACB47531929538D002FF5B2 /* Frameworks */,
+				DACB47541929538D002FF5B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DACB475D1929538D002FF5B2 /* PBXTargetDependency */,
+			);
+			name = MDCDamerauLevenshteinTests;
+			productName = MDCDamerauLevenshteinTests;
+			productReference = DACB47561929538D002FF5B2 /* MDCDamerauLevenshteinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DACB473E1929538C002FF5B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = DACB47411929538C002FF5B2 /* Build configuration list for PBXProject "MDCDamerauLevenshtein" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DACB473D1929538C002FF5B2;
+			productRefGroup = DACB47471929538C002FF5B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DACB47451929538C002FF5B2 /* MDCDamerauLevenshtein */,
+				DACB47551929538D002FF5B2 /* MDCDamerauLevenshteinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DACB47541929538D002FF5B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACB47641929538D002FF5B2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DACB47421929538C002FF5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4C02FA192A01EA00EDA983 /* NSString+MDCCompare.m in Sources */,
+				DAD309681929FC5800EB38CD /* MDCDistanceMatrix.m in Sources */,
+				DAD309641929F95D00EB38CD /* MDCDamerauLevenshteinDistance.m in Sources */,
+				DACB477419295403002FF5B2 /* MDCLevenshteinDistance.m in Sources */,
+				DA4C0303192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m in Sources */,
+				DAD3095E1929EC5F00EB38CD /* NSString+MDCLevenshteinDistance.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACB47521929538D002FF5B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACB47781929573C002FF5B2 /* MDCLevenshteinDistanceTests.m in Sources */,
+				DAD309701929FFAC00EB38CD /* MDCDamerauLevenshteinDistanceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DACB475D1929538D002FF5B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DACB47451929538C002FF5B2 /* MDCDamerauLevenshtein */;
+			targetProxy = DACB475C1929538D002FF5B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DACB47621929538D002FF5B2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DACB47631929538D002FF5B2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DACB47671929538D002FF5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DACB47681929538D002FF5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DACB476A1929538D002FF5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MDCDamerauLevenshtein.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCDamerauLevenshtein/MDCDamerauLevenshtein-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DACB476B1929538D002FF5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MDCDamerauLevenshtein.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCDamerauLevenshtein/MDCDamerauLevenshtein-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		DACB476D1929538D002FF5B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCDamerauLevenshtein/MDCDamerauLevenshtein-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MDCDamerauLevenshteinTests/MDCDamerauLevenshteinTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DACB476E1929538D002FF5B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MDCDamerauLevenshtein/MDCDamerauLevenshtein-Prefix.pch";
+				INFOPLIST_FILE = "MDCDamerauLevenshteinTests/MDCDamerauLevenshteinTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DACB47411929538C002FF5B2 /* Build configuration list for PBXProject "MDCDamerauLevenshtein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACB47671929538D002FF5B2 /* Debug */,
+				DACB47681929538D002FF5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACB47691929538D002FF5B2 /* Build configuration list for PBXNativeTarget "MDCDamerauLevenshtein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACB476A1929538D002FF5B2 /* Debug */,
+				DACB476B1929538D002FF5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DACB476C1929538D002FF5B2 /* Build configuration list for PBXNativeTarget "MDCDamerauLevenshteinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DACB476D1929538D002FF5B2 /* Debug */,
+				DACB476E1929538D002FF5B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DACB473E1929538C002FF5B2 /* Project object */;
+}
