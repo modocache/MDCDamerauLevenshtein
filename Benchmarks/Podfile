@@ -1,0 +1,5 @@
+platform :osx, '10.9'
+
+pod 'MDCDamerauLevenshtein', path: '../'
+pod 'NSString+LevenshteinDistance'
+

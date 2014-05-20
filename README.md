@@ -5,6 +5,8 @@
 Categories to calculate the edit distance between `NSString` objects.
 
 ```objc
+#import <MDCDamerauLevenshtein/MDCDamerauLevenshtein.h>
+
 [@"Central Park" mdc_levenshteinDistanceTo:@"Centarl Prak"];         // => 4
 [@"Central Park" mdc_damerauLevenshteinDistanceTo:@"Centarl Prak"];  // => 2
 ```
@@ -26,9 +28,32 @@ Potential applications for this library:
  display terms with small edit distances.
 - ...and many more!
 
-## Other Implementations
+## Benchmarking Against Other Implmentations
 
-- [koyachi/NSString-LevenshteinDistance](https://github.com/koyachi/NSString-LevenshteinDistance)
-  also provides categories on `NSString`, but only computes Levenshtein distance, not
-  Damerau-Levenshtein. Does not include unit tests.
+The benchmarking app is included in this repository. It consists of two benchmarks:
+
+1. **Normal:** Finding the Levenshtein distance between "sitting" and "kitten"
+2. **Large:** Finding the Levenshtein distance between two paragraphs of text (409 and 728 characters, respectively)
+
+<table>
+  <tr>
+    <th>Library</th>
+    <th>Avg. Time (Normal)</th>
+    <th>Avg. Time (Large)</th>
+  </tr>
+  <tr>
+    <td>MDCDamerauLevenshtein</td>
+    <td>14,218 nanoseconds</td>
+    <td>0.0792383 seconds</td>
+  </tr>
+  <tr>
+    <td>NSString+LevenshteinDistance</td>
+    <td>17,812 nanoseconds (25% slower)</td>
+    <td>0.0949104 seconds (20% slower)</td>
+  </tr>
+</table>
+
+> [koyachi/NSString-LevenshteinDistance](https://github.com/koyachi/NSString-LevenshteinDistance)
+  only computes Levenshtein distance, not Damerau-Levenshtein, so only Levenshtein benchmarks are included here.
+  The project does not include unit tests, but when benchmarked it produced correct distances.
 
