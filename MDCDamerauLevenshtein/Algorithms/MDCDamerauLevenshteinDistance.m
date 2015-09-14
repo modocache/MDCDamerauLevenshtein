@@ -38,7 +38,7 @@ extern NSUInteger mdc_damerauLevenshteinDistance(NSString *left, NSString *right
         // the same in the first place (i.e.: the "ll" in "hello" and "hello"),
         // we don't want to increment the edit distance; hence we add `cost`, not 1.
         NSUInteger transposition = HUGE_VAL;
-        if ([NSString mdc_sameCharacterAtLeft:left index:y-1 right:right index:x-2] &&
+        if (x > 1 && y > 1 && [NSString mdc_sameCharacterAtLeft:left index:y-1 right:right index:x-2] &&
             [NSString mdc_sameCharacterAtLeft:left index:y-2 right:right index:x-1]) {
             transposition = matrix->distances[y-2][x-2] + cost;
         }
