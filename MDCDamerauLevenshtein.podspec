@@ -28,9 +28,11 @@ Pod::Spec.new do |s|
 
   s.source              = { :git => "https://github.com/modocache/MDCDamerauLevenshtein.git",
                             :tag => "v#{s.version}" }
-  s.source_files        = "MDCDamerauLevenshtein/**/*.{h,m}"
+  s.source_files        = "MDCDamerauLevenshtein/**/*.{h,m,mm}"
   s.public_header_files = "MDCDamerauLevenshtein/MDCDamerauLevenshtein.h",
                           "MDCDamerauLevenshtein/Categories/*.h"
-  s.xcconfig            = { "OTHER_LDFLAGS" => '-all_load' }
+  s.xcconfig            = { "OTHER_LDFLAGS" => '-all_load -lc++' }
   s.requires_arc        = true
+  s.ios.deployment_target = "7.0"
+  s.osx.deployment_target = "10.7"
 end

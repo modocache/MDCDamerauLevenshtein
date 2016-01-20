@@ -41,4 +41,8 @@
                    @"Expected distance between string and empty string to be length of string");
 }
 
+- (void)testStringsWithSameWordsAtBeginning {
+	XCTAssertEqual(mdc_damerauLevenshteinDistance(@"rogate sunday", @"sunday"), 7);
+}
+
 @end
