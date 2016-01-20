@@ -115,11 +115,11 @@
 	using namespace std;
 
 	valarray<NSUInteger> matrix(_width*_height);
-	valarray<size_t> leftIndexes(_height-1);
-	valarray<size_t> rightIndexes(_width-1);
-	iota(begin(leftIndexes), end(leftIndexes), 1);
-	iota(begin(rightIndexes), end(rightIndexes), 1);
-	matrix[leftIndexes*_width] = rightIndexes;
+	valarray<size_t> leftIndexes(_height);
+	valarray<size_t> rightIndexes(_width);
+	iota(begin(leftIndexes), end(leftIndexes), 0);
+	iota(begin(rightIndexes), end(rightIndexes), 0);
+	matrix[leftIndexes*_width] = leftIndexes;
 	matrix[rightIndexes] = rightIndexes;
 	return matrix;
 }
@@ -128,5 +128,19 @@
 	return [@([self.leftString characterAtIndex:leftIndex])
 			compare:@([self.rightString characterAtIndex:rightIndex])] == NSOrderedSame;
 }
+
+#ifdef MDCDamerauLevenshteinAllowDebug
+void logMatrix(const std::valarray<NSUInteger>& m, NSUInteger w, NSUInteger h) {
+	NSArray *rows = @[];
+	for (NSUInteger y = 0; y < h; ++y) {
+		NSArray *row = @[];
+		for (NSUInteger x = 0; x < w; ++x) {
+			row = [row arrayByAddingObject:@(m[y*w + x]).stringValue];
+		}
+		rows = [rows arrayByAddingObject:[row componentsJoinedByString:@" "]];
+	}
+	NSLog(@"\n%@\n", [rows componentsJoinedByString:@"\n"]);
+}
+#endif
 
 @end
