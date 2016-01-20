@@ -33,4 +33,6 @@ Pod::Spec.new do |s|
                           "MDCDamerauLevenshtein/Categories/*.h"
   s.xcconfig            = { "OTHER_LDFLAGS" => '-all_load -lc++' }
   s.requires_arc        = true
+  s.ios.deployment_target = "7.0"
+  s.osx.deployment_target = "10.7"
 end
