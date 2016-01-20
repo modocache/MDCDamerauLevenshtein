@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		282DAB481C503FD4004ABF71 /* MDCDamerauLevenshtein.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MDCDamerauLevenshtein.podspec; sourceTree = "<group>"; };
 		DA4C0301192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDCDamerauLevenshteinDistance.h"; sourceTree = "<group>"; };
 		DA4C0302192A089600EDA983 /* NSString+MDCDamerauLevenshteinDistance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDCDamerauLevenshteinDistance.m"; sourceTree = "<group>"; };
 		DACB47461929538C002FF5B2 /* libMDCDamerauLevenshtein.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMDCDamerauLevenshtein.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +97,7 @@
 		DACB473D1929538C002FF5B2 = {
 			isa = PBXGroup;
 			children = (
+				282DAB481C503FD4004ABF71 /* MDCDamerauLevenshtein.podspec */,
 				DACB474B1929538C002FF5B2 /* MDCDamerauLevenshtein */,
 				DACB475F1929538D002FF5B2 /* MDCDamerauLevenshteinTests */,
 				DACB47481929538C002FF5B2 /* Frameworks */,
