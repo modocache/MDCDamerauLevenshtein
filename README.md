@@ -59,5 +59,5 @@ The benchmarking app is included in this repository. It consists of two benchmar
 To use the `MDCDamerauLevenshtein` library in a SwiftPM project, add the following line to the dependencies in your `Package.swift` file:
 
 ```swift
-.package(url: "https://github.com/mmllr/MDCDamerauLevenshtein", from: "0.1.1"),
+.package(url: "https://github.com/mmllr/MDCDamerauLevenshtein", from: "0.1.2"),
 ```
