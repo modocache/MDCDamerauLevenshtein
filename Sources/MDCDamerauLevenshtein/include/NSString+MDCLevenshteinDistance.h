@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface NSString (MDCLevenshteinDistance)
 
 /**
@@ -36,3 +38,5 @@
 - (NSUInteger)mdc_levenshteinDistanceTo:(NSString *)string;
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -20,16 +20,11 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "MDCDamerauLevenshtein",
-            dependencies: [],
-            publicHeadersPath: "include",
-            linkerSettings: [
-                .linkedLibrary("c++")
-            ]
+            dependencies: []
         ),
         .testTarget(
             name: "MDCDamerauLevenshteinTests",
             dependencies: ["MDCDamerauLevenshtein"]
           )
-    ],
-    cxxLanguageStandard: .cxx11
+    ]
 )

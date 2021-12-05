@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface MDCDistanceMatrix : NSObject
 
 - (instancetype)initWithLeftString:(NSString*)left rightString:(NSString*)rightString;
@@ -17,3 +19,4 @@
 
 @end
 
+NS_ASSUME_NONNULL_END

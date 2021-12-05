@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 /**
  Calculates the edit distance between two strings using the Levenshtein
  distance algorithm.
@@ -23,3 +24,5 @@ extern NSUInteger mdc_levenshteinDistance(NSString *left, NSString *right);
 
  */
 extern void mdc_normalizeDistanceParameters(NSString **left, NSString **right);
+
+NS_ASSUME_NONNULL_END

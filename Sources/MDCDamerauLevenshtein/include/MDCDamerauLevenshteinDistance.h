@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  Calculates the edit distance between two strings using the
  Damerau-Levenshtein distance algorithm.
  */
 extern NSUInteger mdc_damerauLevenshteinDistance(NSString *left, NSString *right);
+
+NS_ASSUME_NONNULL_END
